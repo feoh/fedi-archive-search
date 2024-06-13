@@ -11,4 +11,5 @@ search_term = st.text_input("Search term")
 
 statuses=duckdb.sql("select statuses FROM read_json_auto('oldbytes.space.user.feoh.json', maximum_object_size=160000000)")
 
-st.table(statuses)
+
+st.write(statuses)
